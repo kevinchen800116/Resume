@@ -17,3 +17,11 @@ git push -f https://github.com/kevinchen800116/Resume.git master:gh-pages
 cd -
 
 # 執行指令，在終端機輸入 deploy.sh
+
+
+# 10. 專案內如有更動，即可使用 git add .
+# git commit -m "修改內容"
+# git push
+# 三個指令先更新 Github 上 master 的部分
+# 11. 接著在 Git 工具執行 sh deploy.sh 更新 gh-pages 的部分，即完成所有動作
+# //https://ithelp.ithome.com.tw/articles/10237170?sc=pt 參考網誌
