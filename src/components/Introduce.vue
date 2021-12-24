@@ -8,7 +8,7 @@
       <p class="date">
         過去曾參與第三方支付(立方支付公司)後台網站的測試，以及API的開發測試等。也曾參與銀行應收帳款承購系統(天逸財金科技公司)的UAT測試並撰寫測試報告。之前是用Python寫測試腳本(
         Selenium
-        )，並套用Pytest進行assert驗證測試結果，產出測試報告。曾使用過katalon測試工具進行E2E的自動化測試，以及API自動化測試
+        )，並套用Pytest進行assert驗證測試結果，產出測試報告。曾使用過katalon測試工具進行E2E的自動化測試，以及API自動化測試。
       </p>
 
       <p class="date">
