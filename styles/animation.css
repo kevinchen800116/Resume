@@ -24,15 +24,15 @@ div.animation {
 }
 
 #second {
-  stroke-dasharray: 658px;
-  stroke-dashoffset: 658px;
+  stroke-dasharray: 233px;
+  stroke-dashoffset: 233px;
   -webkit-animation: fadeInside 0.6s ease-in forwards 0.3s;
           animation: fadeInside 0.6s ease-in forwards 0.3s;
 }
 
 #third {
-  stroke-dasharray: 658px;
-  stroke-dashoffset: 658px;
+  stroke-dasharray: 230px;
+  stroke-dashoffset: 230px;
   -webkit-animation: fadeInside 0.6s ease-in forwards 0.6s;
           animation: fadeInside 0.6s ease-in forwards 0.6s;
 }
@@ -45,15 +45,15 @@ div.animation {
 }
 
 #fifth {
-  stroke-dasharray: 376px;
-  stroke-dashoffset: 376px;
+  stroke-dasharray: 346px;
+  stroke-dashoffset: 346px;
   -webkit-animation: fadeInside 0.6s ease-in forwards 1.2s;
           animation: fadeInside 0.6s ease-in forwards 1.2s;
 }
 
 #sixth {
-  stroke-dasharray: 660px;
-  stroke-dashoffset: 660px;
+  stroke-dasharray: 360px;
+  stroke-dashoffset: 360px;
   -webkit-animation: fadeInside 0.6s ease-in forwards 1.5s;
           animation: fadeInside 0.6s ease-in forwards 1.5s;
 }

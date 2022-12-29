@@ -1,10 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
+
 /* GET home page. */
-router.get('/', function (req, res, next) {
+router.get('/', function (req, res) {
   res.render('index', { title: 'Express' });
-  next();
+  // next();
 });
 
 router.get('/api/personal', function (req, res, next) {
@@ -20,5 +21,6 @@ router.post('/api/favorite', function (req, res, next) {
   console.log("你post到我了")
   res.send(req.body)
 })
+
 
 module.exports = router;

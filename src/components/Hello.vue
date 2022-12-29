@@ -139,7 +139,7 @@
         />
       </svg>
       <br />
-      <svg
+      <!-- <svg
         width="126"
         height="126"
         viewBox="0 0 126 126"
@@ -198,7 +198,7 @@
           id="thirteenth"
           class="thePaths"
         />
-      </svg>
+      </svg> -->
       <svg
         width="123"
         height="101"

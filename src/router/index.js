@@ -6,7 +6,7 @@ import InfoCard from '@/components/InfoCard'
 // import MainPage from '@/components/MainPage'
 // import Navbar from '@/components/Navbar'
 import Hello from '@/components/Hello'
-import NotFoundView from '@/views/404'
+import NotFoundView from '@/views/404page'
 import WorkExperience2 from '@/views/WorkExp2'
 
 Vue.use(Router)
@@ -37,6 +37,7 @@ export default new Router({
     {
       // not found handler
       path: '*',
+      // redirect: NotFoundView
       component: NotFoundView
     }
   ]

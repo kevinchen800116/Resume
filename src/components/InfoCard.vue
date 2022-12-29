@@ -22,19 +22,29 @@
     </div>
     <div v-for="(item, i) of product" :key="i">
       <div class="infocard">
-        <div class="infomation">
+        <div class="information">
           <h2>{{ item.name }}</h2>
           <p class="date">職務：{{ item.job }}</p>
           <p class="date">任職期間：{{ item.age }}</p>
-          <p class="date">工作內容：{{ item.Dec }}</p>
-          <p class="link">
+          <p class="date2">工作內容：</p>
+          <p class="date2">{{ item.Dec }}</p>
+          <p class="date2">{{ item.Dec2 }}</p>
+          <p class="date2">{{ item.Dec3 }}</p>
+          <p class="date2">{{ item.Dec4 }}</p>
+          <p class="date2">{{ item.Dec5 }}</p>
+          <p class="date2">{{ item.Dec6}}</p>
+          <p class="date2">{{ item.Dec7 }}</p>
+          <!-- <p class="link">
             <a v-if="'url' in item == true" target="_blank" :href="item.url">
               作品連結
               <span class="spaceHover">&nbsp;</span>
               >&nbsp; 請點我
             </a>
-            <a v-else></a>
-          </p>
+            <a v-else>
+              作品連結
+              <span class="spaceHover">&nbsp;</span>
+              >&nbsp; 請點我</a>
+          </p> -->
         </div>
       </div>
     </div>
@@ -61,28 +71,48 @@ export default {
           name: "緯創軟體股份有限公司",
           age: "仍在職",
           job: "測試工程師",
-          Dec: "1.測試保險系統及錯誤追蹤管理驗證。2.整理回報測試結果，並協助工程師除錯。3.撰寫測試報告並記錄問題。4.python編寫selenium測試腳本，並使用pytest測試框架進行驗證結果，產出測試報告。",
+          // Dec: "1.測試保險系統及錯誤追蹤管理驗證。2.整理回報測試結果，並協助工程師除錯。3.撰寫測試報告並記錄問題。4.python編寫selenium測試腳本，並使用pytest測試框架進行驗證結果，產出測試報告。",
+          Dec:"1.測試壽險新核心保險系統及錯誤追蹤管理驗證。",
+          Dec2:"2.整理並回報測試結果，協助工程師除錯。",
+          Dec3:"3.撰寫測試報告並記錄問題。",
+          Dec4:"4.python編寫selenium測試腳本，並使用pytest測試框架進行驗證結果，產出測試報告。",
+          Dec5:"5.撰寫Sikulix測試腳本搭配TestNG測試框架，實現桌面自動化進行end to end測試。",
+          Dec6:"6.利用postman發送request至壽險建單api，通過檢核後，於系統內查詢該筆單號資訊是否正確。",
+          Dec7:"7.依照需求規格設計符合User使用情境之Test plan。",
         },
         {
           id: "2",
           name: "cubepayment(立方支付)",
           age: "1年7個月",
           job: "自動化測試工程師",
-          Dec: "1.執行軟體測試工作及錯誤追蹤管理驗證。2.Api測試with postman insomnia。3.Katalon測試腳本。4.整理回報測試結果協助工程師除錯。5.管理local enviroment模擬問題。6.Utrack記錄問題7.python編寫selenium測試腳本8.查看Linux log",
+          Dec: "1.執行軟體測試工作及錯誤追蹤管理驗證。",
+          Dec2: "2.Api測試with postman insomnia。",
+          Dec3: "3.Katalon測試腳本。",
+          Dec4: "4.整理回報測試結果協助工程師除錯，並利用Utrack記錄問題。",
+          Dec5: "5.管理local enviroment模擬問題。",
+          Dec6: "6.依照user使用情境利用python編寫selenium測試腳本。",
+          Dec7: "7.查看Linux log。",
         },
         {
           id: "3",
           name: "信深科技",
           age: "5個月",
           job: "系統分析師",
-          Dec: "1.Sap Hybris 整合測試。2.Uml流程圖繪製3.編寫Product Specifications產品規格文件。4.需求會議訪談。",
+          Dec: "1.Sap Hybris 整合測試。",
+          Dec2: "2.Uml流程圖繪製",
+          Dec3: "3.編寫Product Specifications產品規格文件。",
+          Dec4: "4.參與需求會議訪談。",
         },
         {
           id: "4",
           name: "天逸財金科技公司",
           age: "2年",
           job: "系統維護／操作人員",
-          Dec: "1.銀行端應收帳款承購系統整合測試、功能測試、使用者測試。2.編寫使用、操作手冊。3.編寫測試報告並進行問題追蹤處理。",
+          Dec: "1.銀行端應收帳款承購系統整合測試、功能測試、使用者測試。",
+          Dec2: "2.編寫使用、操作手冊。",
+          Dec3: "3.編寫測試報告並進行問題追蹤處理。",
+
+          
         },
       ],
     };
@@ -122,7 +152,7 @@ export default {
   background: url("../assets/bg.png") 0 0 no-repeat;
   display: flex;
   flex-direction: column;
-  flex-basis: 60%;
+  flex-basis: 100%;
 }
 .photography {
   text-align: right;
@@ -152,6 +182,11 @@ h3 {
 p.date {
   font-size: 0.9em;
   color: black;
+}
+p.date2 {
+  font-size: 0.9em;
+  color: black;
+  text-align: left;
 }
 a {
   text-decoration: none;
