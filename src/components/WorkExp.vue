@@ -21,6 +21,7 @@
 
 export default {
   name: "WorkExperience",
+  inject:['reload'],
   data() {
     return {
       msg: "Welcome to Your Vue.js App",
@@ -47,6 +48,9 @@ export default {
     };
   },
   methods: {
+    reflesh(){
+      this.reload()
+    },
     handleScroll: function () {
       if (this.scTimer) return;
       this.scTimer = setTimeout(() => {

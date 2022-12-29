@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view name="hello" />
+    <router-view v-if="isShow" name="hello" />
     <HeaderBox :providers="providers" />
     <HelloWorld />
 
@@ -20,8 +20,14 @@ export default {
     InfoCard,
   },
   name: "App",
+  provide () {
+    return {
+      reload: this.reload
+    }
+  },
   data() {
     return {
+      isShow: true,
       providers: [
         {
           id: "franceinfo",
@@ -41,6 +47,14 @@ export default {
       ],
     };
   },
+  methods: {
+    reload () {
+      this.isShow= false
+      this.$nextTick(function () {
+        this.isShow= true
+      })
+    }
+  }
 };
 </script>
 

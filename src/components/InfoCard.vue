@@ -54,6 +54,7 @@
 <script>
 export default {
   name: "InfoCard",
+  inject:['reload'],
   // props: {
   //   mdata: {},
   // },
@@ -72,11 +73,11 @@ export default {
           age: "仍在職",
           job: "測試工程師",
           // Dec: "1.測試保險系統及錯誤追蹤管理驗證。2.整理回報測試結果，並協助工程師除錯。3.撰寫測試報告並記錄問題。4.python編寫selenium測試腳本，並使用pytest測試框架進行驗證結果，產出測試報告。",
-          Dec:"1.測試壽險新核心保險系統及錯誤追蹤管理驗證。",
+          Dec:"1.測試壽險核心保險系統及錯誤追蹤管理驗證。",
           Dec2:"2.整理並回報測試結果，協助工程師除錯。",
           Dec3:"3.撰寫測試報告並記錄問題。",
           Dec4:"4.python編寫selenium測試腳本，並使用pytest測試框架進行驗證結果，產出測試報告。",
-          Dec5:"5.撰寫Sikulix測試腳本搭配TestNG測試框架，實現桌面自動化進行end to end測試。",
+          Dec5:"5.利用Java撰寫Sikulix測試腳本搭配TestNG測試框架，實現桌面自動化進行end to end測試。",
           Dec6:"6.利用postman發送request至壽險建單api，通過檢核後，於系統內查詢該筆單號資訊是否正確。",
           Dec7:"7.依照需求規格設計符合User使用情境之Test plan。",
         },
@@ -118,6 +119,9 @@ export default {
     };
   },
   methods: {
+    reflesh(){
+      this.reload()
+    },
     handleScroll: function () {
       if (this.scTimer) return;
       this.scTimer = setTimeout(() => {
