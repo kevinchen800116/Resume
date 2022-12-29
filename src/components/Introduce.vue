@@ -7,7 +7,7 @@
       <h2>自我介紹</h2>
       <br>
       <p class="date2">
-        您好，我叫陳光昇，畢業於文化大學國際貿易學系，在緯創軟體擔任測試工程師，負責保險核心系統測試。目前利用Java套件Sikulix搭配TestNG執行Graph-talk系統的End to End 測試，以及Test Plan的撰寫工作。
+        您好，我叫陳光昇，畢業於文化大學國際貿易學系，在緯創軟體擔任測試工程師，負責保險核心系統測試。目前於法國巴黎人壽專案利用Java套件Sikulix搭配TestNG執行系統的End to End 測試，以及Test Plan的撰寫工作。
       </p>
       <p class="date2">
         過去曾參與第三方支付後台網站的測試，以及API的開發測試等。也曾參與銀行應收帳款承購系統的UAT測試並撰寫測試報告。之前是用Python寫測試腳本(
