@@ -28,6 +28,7 @@
           <p class="date">任職期間：{{ item.age }}</p>
           <p class="date2">工作內容：</p>
           <p class="date2">{{ item.Dec }}</p>
+          <p class="date2">{{ item.Dec1 }}</p>
           <p class="date2">{{ item.Dec2 }}</p>
           <p class="date2">{{ item.Dec3 }}</p>
           <p class="date2">{{ item.Dec4 }}</p>
@@ -67,11 +68,24 @@ export default {
       scY: 0,
       backupURL: "@/assets/bg.png",
       product: [
+      {
+          id: "0",
+          name: "億力資訊股份有限公司",
+          age: "8個月",
+          job: "自動化測試工程師",
+          // Dec: "1.測試保險系統及錯誤追蹤管理驗證。2.整理回報測試結果，並協助工程師除錯。3.撰寫測試報告並記錄問題。4.python編寫selenium測試腳i本，並使用pytest測試框架進行驗證結果，產出測試報告。",
+          Dec:"1.撰寫自動化測試story文件。",
+          Dec1:"2.依據文件步驟利用Java、selenium、appium進行自動化測試腳本開發(iOS 與 Android）。",
+          Dec2:"3.利用eclipse 插裝套件testNG進行測試用例的管理。",
+          Dec3:"4.將開發完成之腳本，上傳至bitbucket版控內。",
+          Dec4:"5.jenkins拉取bitbucket腳本進行測試。",
+          Dec5:"6.定期Demo已完成腳本的執行情況。",
+        },
         {
           id: "1",
           name: "緯創軟體股份有限公司",
-          age: "仍在職",
-          job: "測試工程師",
+          age: "1年8個月",
+          job: "自動化測試工程師",
           // Dec: "1.測試保險系統及錯誤追蹤管理驗證。2.整理回報測試結果，並協助工程師除錯。3.撰寫測試報告並記錄問題。4.python編寫selenium測試腳本，並使用pytest測試框架進行驗證結果，產出測試報告。",
           Dec:"1.測試壽險核心保險系統及錯誤追蹤管理驗證。",
           Dec2:"2.整理並回報測試結果，協助工程師除錯。",
