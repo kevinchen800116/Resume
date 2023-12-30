@@ -7,8 +7,8 @@
           <br>
           <p class="date">{{ item.Dec }}</p>
           <!-- <a :href="item.url"><p class="date">作品連結:<span class="spaceHover">&nbsp;</span>請點我</p></a> -->
-          <a :href="item.url">作品連結:<span class="spaceHover">&nbsp;</span>請點我</a>
-          
+          <!-- <a :href="item.url">作品連結:<span class="spaceHover">&nbsp;</span>請點我</a> -->
+          <router-link :to="item.url">作品連結:<span class="spaceHover">&nbsp;</span>請點我</router-link>
         </div>
         <div class="photography"><img :src="item.png" alt="Image" /></div>
         <!-- <div class="photography"><img src="../assets/logo.png" alt="" /></div> -->
@@ -37,7 +37,7 @@ export default {
         // },
         {
           name: "自動化測試影片",
-          url: "/#/Video",
+          url: "/Video",
           Dec: "使用python selenium測試待辦清單",
           png: imgUrl1,
         },
