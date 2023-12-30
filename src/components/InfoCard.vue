@@ -114,7 +114,7 @@ export default {
           age: "5個月",
           job: "系統分析師",
           Dec: "1.Sap Hybris 文件閱讀。",
-          Dec2: "2.Uml流程圖繪製",
+          Dec2: "2.Uml流程圖繪製。",
           Dec3: "3.編寫Product Specifications產品規格文件。",
           Dec4: "4.參與需求會議訪談。",
         },
