@@ -11,8 +11,9 @@
   <script>
   export default {
     methods: {
-    playVideo() {
-      this.$refs.video.play();
+      playVideo() {
+        this.$refs.video.play();
+      }
     }
   }
   </script>
