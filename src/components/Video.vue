@@ -1,6 +1,6 @@
 <template>
     <div>
-      <video controls width="60%" ref="video" muted>
+      <video controls width="60%" ref="video" muted @click="playVideo">
         <source src="@/assets/sample.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -10,7 +10,10 @@
   
   <script>
   export default {
-    // 组件的其他配置...
+    methods: {
+    playVideo() {
+      this.$refs.video.play();
+    }
   }
   </script>
   
