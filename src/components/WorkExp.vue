@@ -6,9 +6,16 @@
           <h2>{{ item.name }}</h2>
           <br>
           <p class="date">{{ item.Dec }}</p>
-          <!-- <a :href="item.url"><p class="date">作品連結:<span class="spaceHover">&nbsp;</span>請點我</p></a> -->
-          <!-- <a :href="item.url">作品連結:<span class="spaceHover">&nbsp;</span>請點我</a> -->
-          <router-link :to="item.url">作品連結:<span class="spaceHover">&nbsp;</span>請點我</router-link>
+          <template v-if="isExternalLink(item.url)">
+            <a :href="item.url" target="_blank">
+              作品連結:<span class="spaceHover">&nbsp;</span>請點我
+            </a>
+          </template>
+          <template v-else>
+            <router-link :to="item.url">
+              作品連結:<span class="spaceHover">&nbsp;</span>請點我
+            </router-link>
+          </template>
         </div>
         <div class="photography"><img :src="item.png" alt="Image" /></div>
         <!-- <div class="photography"><img src="../assets/logo.png" alt="" /></div> -->
@@ -57,6 +64,10 @@ export default {
     };
   },
   methods: {
+    isExternalLink(url) {
+      // 判断是否为外部链接
+      return url.startsWith('http');
+    },
     reflesh(){
       this.reload()
     },

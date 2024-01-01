@@ -1,6 +1,6 @@
 <template>
     <div>
-      <video controls width="60%" ref="video">
+      <video controls width="60%" ref="video" muted>
         <source src="@/assets/sample.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
