@@ -24,7 +24,7 @@
   export default {
     data(){
       return{
-        playSrc:require("@/media/sample.mp4"),
+        playSrc:require("@/assets/sample.mp4"),
         resolution: 720,
       }
     },
