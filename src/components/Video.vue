@@ -1,11 +1,12 @@
 <template>
     <div>
-      <vue-core-video-player  
-        muted autoplay preload loop
-        x5-video-player-fullscreen="true"
-        x5-playsinline
-        playsinline
-        webkit-playsinline :src="playSrc"></vue-core-video-player>
+      <vue-core-video-player
+        :muted="true"
+        :autoplay="false"
+        title="自動化測試範例影片"
+        preload="nona"
+        :loop="true"
+        :src="playSrc"></vue-core-video-player>
       <!-- <video 
         controls width="60%" muted autoplay preload loop
         x5-video-player-fullscreen="true"
@@ -23,14 +24,15 @@
   export default {
     data(){
       return{
-        playSrc:require("@/media/sample.mp4")
+        playSrc:require("@/assets/sample.mp4"),
+        resolution: 720,
       }
     },
-    methods: {
-      playVideo() {
-        this.$refs.video.play();
-      }
-    }
+    // methods: {
+    //   playVideo() {
+    //     this.$refs.video.play();
+    //   }
+    // }
   }
   </script>
   
