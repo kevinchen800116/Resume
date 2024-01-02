@@ -8,7 +8,8 @@
         title="自動化測試範例影片"
         preload="nona"
         :loop="true"
-        :src="playSrc"></vue-core-video-player>
+        :src="playSrc"
+        ref="videoPlayer"></vue-core-video-player>
         <button @click="playVideo">播放视频</button>
     </div>
   </template>
