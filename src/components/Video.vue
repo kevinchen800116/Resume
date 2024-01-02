@@ -1,6 +1,8 @@
 <template>
     <div>
-      <vue-core-video-player
+        <vue-core-video-player
+        :webkit-playsinline="true"
+        :x5-playsinline="true"
         :muted="true"
         :autoplay="false"
         title="自動化測試範例影片"
