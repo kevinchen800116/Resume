@@ -23,7 +23,7 @@
   export default {
     data(){
       return{
-        playSrc:require("@/assets/sample.mp4")
+        playSrc:require("@/media/sample.mp4")
       }
     },
     methods: {
