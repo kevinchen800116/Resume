@@ -17,18 +17,13 @@
       />
     </svg>
 
-    <!-- <AppMenu id="menu" :providers="providers" /> -->
   </div>
 </template>
 
 <script>
-import AppMenu from "./AppMenu.vue";
 
 export default {
   name: "HeaderBox",
-  components: {
-    AppMenu,
-  },
   props: ["providers"],
 };
 </script>

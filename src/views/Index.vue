@@ -1,8 +1,5 @@
 <template>
   <div>
-    <!-- <HeaderBox @updateSource="reloadFeed" :providers="providers" /> -->
-    <!-- <HeaderBox :providers="providers" /> -->
-    <!-- <HelloWorld msg="工作經歷" /> -->
     <div
       id="pagetop"
       class="fixed right-0 bottom-0"
@@ -23,22 +20,19 @@
         <path d="M18 15l-6-6-6 6" />
       </svg>
     </div>
-    <!-- <div v-for="item of product" :key="item.id"> -->
-    <!-- <InfoCard :mdata="item"></InfoCard> -->
     <InfoCard></InfoCard>
-    <!-- </div> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from "../components/HelloWorld.vue";
+import Menu from "../components/Menu.vue";
 import HeaderBox from "../components/HeaderBox.vue";
 import InfoCard from "../components/InfoCard.vue";
 
 export default {
   name: "WorkExp2",
   components: {
-    HelloWorld,
+    Menu,
     HeaderBox,
     InfoCard,
   },

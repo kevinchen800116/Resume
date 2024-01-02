@@ -2,7 +2,7 @@
   <div id="app">
     <router-view v-if="isShow" name="hello" />
     <HeaderBox :providers="providers" />
-    <HelloWorld />
+    <Menu />
 
     <router-view />
   </div>
@@ -10,15 +10,15 @@
 
 <script>
 import HeaderBox from "./components/HeaderBox.vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import Menu from "./components/Menu.vue";
 import InfoCard from "./components/InfoCard.vue";
 
 export default {
   components: {
     HeaderBox,
-    HelloWorld,
-    InfoCard,
-  },
+    Menu,
+    InfoCard
+},
   name: "App",
   provide () {
     return {

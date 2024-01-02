@@ -8,7 +8,7 @@ import Video from '@/components/Video'
 // import Navbar from '@/components/Navbar'
 import Hello from '@/components/Hello'
 import NotFoundView from '@/views/404page'
-import WorkExperience2 from '@/views/WorkExp2'
+import Index from '@/views/Index'
 
 Vue.use(Router)
 
@@ -16,9 +16,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'WorkExperience2',
-      components: { default: WorkExperience2, hello: Hello },
-      // component: WorkExperience2
+      name: 'Index',
+      components: { default: Index, hello: Hello },
     },
     {
       path: '/WorkExp',

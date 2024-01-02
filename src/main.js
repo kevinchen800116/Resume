@@ -7,6 +7,11 @@ import axios from 'axios'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import VueCoreVideoPlayer from 'vue-core-video-player'
+
+Vue.use(VueCoreVideoPlayer, {
+  lang: 'zh-CN'
+})
 // 把 axios 註冊為原型
 Vue.prototype.$axios = axios
 
